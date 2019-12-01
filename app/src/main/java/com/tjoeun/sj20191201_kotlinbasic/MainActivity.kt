@@ -3,6 +3,7 @@ package com.tjoeun.sj20191201_kotlinbasic
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
 //            확인버튼이 눌렸는지 로크
             Log.d("확인버튼 클릭", inputString)
+            Toast.makeText(this, "내용이 반영되었습니다.", Toast.LENGTH_SHORT).show()
 
         }
 
